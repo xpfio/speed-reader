@@ -98,7 +98,7 @@ The installation over, the town waited to see its bishop at work.</textarea>
 	text_to_read = "";
 	interval_function = () => {};
 	read = () => {
-		text_to_read = $('textarea').html();
+		text_to_read = $('textarea').val();
 		console.log(text_to_read);
 		text_to_read = text_to_read.replace( /\n/g, "   " ).split( " " );
 		clearInterval(interval_function);
